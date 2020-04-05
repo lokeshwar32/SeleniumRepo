@@ -21,5 +21,31 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+	 <groupId>org.testng</groupId>
+	 <artifactId>testng</artifactId>
+	 <version>6.14.3</version>
+	 <scope>test</scope>
+	</dependency>
+    
+    
   </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-surefire-plugin</artifactId>
+    		<version>2.19.1</version>
+			<configuration>
+				<suiteXmlFiles>
+					<suiteXmlFile>Class2.xml</suiteXmlFile>
+				</suiteXmlFiles>
+			</configuration>    		
+  			
+  		</plugin>
+  	</plugins>
+  </build>
+  
 </project>
